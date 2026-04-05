@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  # FastAPI MCP Server
+  app:
+    build: .
+    container_name: mcp-fastapi
+    restart: unless-stopped
+    environment:
+      - DB_PATH=/app/data/tasks_notes.db
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./data:/app/data
+    networks:
+      - mcp-network
+    # Not exposing port externally - only accessible through Nginx
+    # ports:
+    #   - "8000:8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: mcp-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      # For HTTPS (uncomment when you have SSL certificates)
+      # - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      # Mount logs directory for easy access
+      - ./logs/nginx:/var/log/nginx
+      # For SSL certificates (when ready)
+      # - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      app:
+        condition: service_healthy
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local

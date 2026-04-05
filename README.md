@@ -287,3 +287,9 @@ When you test or build an MCP agent, ask these six questions:
 - GitHub and Notion MCP real-world examples
 - How to read MCP benchmark papers
 - How to deploy an MCP server over HTTP for remote use
+
+
+note:
+1. Font change
+2. Without training data, no one chat with that.
+3. 

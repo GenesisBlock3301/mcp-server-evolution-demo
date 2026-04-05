@@ -1,0 +1,9 @@
+# FastAPI and MCP dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+fastmcp>=0.4.0
+pydantic>=2.5.0
+
+# For SSE transport support
+starlette>=0.27.0
+sse-starlette>=1.6.0
