@@ -1,0 +1,917 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - link "Hugging Face's logo Hugging Face" [ref=e7] [cursor=pointer]:
+            - /url: /
+            - img "Hugging Face's logo" [ref=e8]
+            - generic [ref=e9]: Hugging Face
+          - generic [ref=e10]:
+            - textbox "Search models, datasets, users..." [ref=e11]
+            - img [ref=e12]
+        - navigation "Main" [ref=e14]:
+          - list [ref=e15]:
+            - listitem [ref=e16]:
+              - link "Models" [ref=e17] [cursor=pointer]:
+                - /url: /models
+                - img [ref=e18]
+                - text: Models
+            - listitem [ref=e22]:
+              - link "Datasets" [ref=e23] [cursor=pointer]:
+                - /url: /datasets
+                - img [ref=e24]
+                - text: Datasets
+            - listitem [ref=e29]:
+              - link "Spaces" [ref=e30] [cursor=pointer]:
+                - /url: /spaces
+                - img [ref=e31]
+                - text: Spaces
+            - listitem [ref=e35]:
+              - link "Docs" [ref=e36] [cursor=pointer]:
+                - /url: /docs
+                - img [ref=e37]
+                - text: Docs
+            - listitem [ref=e41]:
+              - link "Pricing" [ref=e42] [cursor=pointer]:
+                - /url: /pricing
+            - listitem [ref=e43]:
+              - button [ref=e45] [cursor=pointer]:
+                - img [ref=e46]
+            - listitem [ref=e51]:
+              - separator [ref=e52]
+            - listitem [ref=e53]:
+              - link "Log In" [ref=e54] [cursor=pointer]:
+                - /url: /login
+            - listitem [ref=e55]:
+              - link "Sign Up" [ref=e56] [cursor=pointer]:
+                - /url: /join
+    - main [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e61]:
+          - generic [ref=e62]:
+            - generic [ref=e63]:
+              - heading "Inference Providers" [level=1] [ref=e65]
+              - img [ref=e66]
+              - combobox [ref=e68]:
+                - option "🏡 View all docs"
+                - option "AWS Trainium & Inferentia"
+                - option "Accelerate"
+                - option "Argilla"
+                - option "AutoTrain"
+                - option "Bitsandbytes"
+                - option "CLI"
+                - option "Chat UI"
+                - option "Dataset viewer"
+                - option "Datasets"
+                - option "Deploying on AWS"
+                - option "Diffusers"
+                - option "Distilabel"
+                - option "Evaluate"
+                - option "Google Cloud"
+                - option "Google TPUs"
+                - option "Gradio"
+                - option "Hub"
+                - option "Hub Python Library"
+                - option "Huggingface.js"
+                - option "Inference Endpoints (dedicated)"
+                - option "Inference Providers" [selected]
+                - option "Kernels"
+                - option "LeRobot"
+                - option "Leaderboards"
+                - option "Lighteval"
+                - option "Microsoft Azure"
+                - option "Optimum"
+                - option "PEFT"
+                - option "Reachy Mini"
+                - option "Safetensors"
+                - option "Sentence Transformers"
+                - option "TRL"
+                - option "Tasks"
+                - option "Text Embeddings Inference"
+                - option "Text Generation Inference"
+                - option "Tokenizers"
+                - option "Trackio"
+                - option "Transformers"
+                - option "Transformers.js"
+                - option "Xet"
+                - option "smolagents"
+                - option "timm"
+            - button "Search documentation ⌘K" [ref=e69] [cursor=pointer]:
+              - img [ref=e70]
+              - generic [ref=e72]: Search documentation
+              - generic [ref=e73]: ⌘K
+            - generic [ref=e74]:
+              - combobox [ref=e75]:
+                - option "main" [selected]
+              - combobox [ref=e76]:
+                - option "EN" [selected]
+              - button [ref=e78] [cursor=pointer]:
+                - img [ref=e79]
+              - link "542" [ref=e85] [cursor=pointer]:
+                - /url: https://github.com/huggingface/hub-docs
+                - img [ref=e86]
+                - text: "542"
+          - navigation [ref=e88]:
+            - generic [ref=e92] [cursor=pointer]: Get Started
+            - generic [ref=e93]:
+              - link "Inference Providers" [ref=e94] [cursor=pointer]:
+                - /url: /docs/inference-providers/index
+              - link "Pricing and Billing" [ref=e95] [cursor=pointer]:
+                - /url: /docs/inference-providers/pricing
+              - link "Hub integration" [ref=e96] [cursor=pointer]:
+                - /url: /docs/inference-providers/hub-integration
+              - link "Security" [ref=e97] [cursor=pointer]:
+                - /url: /docs/inference-providers/security
+            - generic [ref=e101] [cursor=pointer]: Guides
+            - generic [ref=e102]:
+              - link "Your First API Call" [ref=e103] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/first-api-call
+              - link "Building Your First AI App" [ref=e104] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/building-first-app
+              - link "Structured Outputs with LLMs" [ref=e105] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/structured-output
+              - link "Function Calling" [ref=e106] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/function-calling
+              - link "Responses API (beta)" [ref=e107] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/responses-api
+              - link "How to use OpenAI gpt-oss" [ref=e108] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/gpt-oss
+              - link "Build an Image Editor" [ref=e109] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/image-editor
+              - link "Automating Code Review with GitHub Actions" [ref=e110] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/github-actions-code-review
+              - link "Agentic Coding Environments with OpenEnv" [ref=e111] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/coding-environment
+              - link "Evaluating Models with Inspect" [ref=e112] [cursor=pointer]:
+                - /url: /docs/inference-providers/guides/evaluation-inspect-ai
+            - generic [ref=e116] [cursor=pointer]: Integrations
+            - generic [ref=e117]:
+              - link "Overview" [ref=e118] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/index
+              - link "Add Your Integration" [ref=e119] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/adding-integration
+              - link "Claude Code" [ref=e120] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/claude-code
+              - link "Hermes Agent" [ref=e121] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/hermes-agent
+              - link "NeMo Data Designer" [ref=e122] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/datadesigner
+              - link "MacWhisper" [ref=e123] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/macwhisper
+              - link "OpenCode" [ref=e124] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/opencode
+              - link "Pi" [ref=e125] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/pi
+              - link "Vision Agents" [ref=e126] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/visionagents
+              - link "VS Code with GitHub Copilot" [ref=e127] [cursor=pointer]:
+                - /url: /docs/inference-providers/integrations/vscode
+            - generic [ref=e131] [cursor=pointer]: Inference Tasks
+            - generic [ref=e132]:
+              - link "Chat Completion" [ref=e133] [cursor=pointer]:
+                - /url: /docs/inference-providers/tasks/chat-completion
+              - link "Feature Extraction" [ref=e134] [cursor=pointer]:
+                - /url: /docs/inference-providers/tasks/feature-extraction
+              - link "Text to Image" [ref=e135] [cursor=pointer]:
+                - /url: /docs/inference-providers/tasks/text-to-image
+              - link "Text to Video" [ref=e136] [cursor=pointer]:
+                - /url: /docs/inference-providers/tasks/text-to-video
+              - generic [ref=e140] [cursor=pointer]: Other Tasks
+            - generic [ref=e144] [cursor=pointer]: Providers
+            - generic [ref=e145]:
+              - link "Cerebras" [ref=e146] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/cerebras
+              - link "Cohere" [ref=e147] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/cohere
+              - link "Fal AI" [ref=e148] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/fal-ai
+              - link "Featherless AI" [ref=e149] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/featherless-ai
+              - link "Fireworks" [ref=e150] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/fireworks-ai
+              - link "Groq" [ref=e151] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/groq
+              - link "Hyperbolic" [ref=e152] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/hyperbolic
+              - link "HF Inference" [ref=e153] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/hf-inference
+              - link "Novita" [ref=e154] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/novita
+              - link "Nscale" [ref=e155] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/nscale
+              - link "OVHcloud AI Endpoints" [ref=e156] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/ovhcloud
+              - link "Public AI" [ref=e157] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/publicai
+              - link "Replicate" [ref=e158] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/replicate
+              - link "SambaNova" [ref=e159] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/sambanova
+              - link "Scaleway" [ref=e160] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/scaleway
+              - link "Together" [ref=e161] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/together
+              - link "WaveSpeedAI" [ref=e162] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/wavespeed
+              - link "Z.ai" [ref=e163] [cursor=pointer]:
+                - /url: /docs/inference-providers/providers/zai-org
+            - link "Hub API" [ref=e164] [cursor=pointer]:
+              - /url: /docs/inference-providers/hub-api
+            - link "Register as an Inference Provider" [ref=e165] [cursor=pointer]:
+              - /url: /docs/inference-providers/register-as-a-provider
+        - generic [ref=e167]:
+          - generic [ref=e169]:
+            - generic [ref=e170]: Join the Hugging Face community
+            - paragraph [ref=e171]: and get access to the augmented documentation experience
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - img [ref=e175]
+                - generic [ref=e179]: Collaborate on models, datasets and Spaces
+              - generic [ref=e180]:
+                - img [ref=e182]
+                - generic [ref=e184]: Faster examples with accelerated inference
+              - generic [ref=e185]:
+                - img [ref=e187]
+                - generic [ref=e189]: Switch between documentation themes
+            - generic [ref=e190]:
+              - link "Sign Up" [ref=e191] [cursor=pointer]:
+                - /url: /join
+                - button "Sign Up" [ref=e192]
+              - paragraph [ref=e193]: to get started
+          - generic [ref=e194]:
+            - paragraph
+            - generic [ref=e196]:
+              - button "Copy page" [ref=e197] [cursor=pointer]:
+                - img [ref=e199]
+                - generic [ref=e203]: Copy page
+              - button "Open copy menu" [ref=e204] [cursor=pointer]:
+                - img [ref=e205]
+            - heading "Inference Providers" [level=1] [ref=e207]:
+              - link [ref=e208] [cursor=pointer]:
+                - /url: "#inference-providers"
+                - img [ref=e210]
+              - text: Inference Providers
+            - img [ref=e213]
+            - paragraph [ref=e214]: Hugging Face’s Inference Providers give developers access to hundreds of machine learning models, powered by world-class inference providers. They are also integrated into our client SDKs (for JS and Python), making it easy to explore serverless inference of models on your favorite providers.
+            - heading "Partners" [level=2] [ref=e215]:
+              - link [ref=e216] [cursor=pointer]:
+                - /url: "#partners"
+                - img [ref=e218]
+              - text: Partners
+            - paragraph [ref=e220]: "Our platform integrates with leading AI infrastructure providers, giving you access to their specialized capabilities through a single, consistent API. Here’s what each partner supports:"
+            - table [ref=e221]:
+              - rowgroup [ref=e222]:
+                - row "Provider Chat completion (LLM) Chat completion (VLM) Feature Extraction Text to Image Text to video Speech to text" [ref=e223]:
+                  - columnheader "Provider" [ref=e224]
+                  - columnheader "Chat completion (LLM)" [ref=e225]
+                  - columnheader "Chat completion (VLM)" [ref=e226]
+                  - columnheader "Feature Extraction" [ref=e227]
+                  - columnheader "Text to Image" [ref=e228]
+                  - columnheader "Text to video" [ref=e229]
+                  - columnheader "Speech to text" [ref=e230]
+              - rowgroup [ref=e231]:
+                - row "Cerebras ✅" [ref=e232]:
+                  - cell "Cerebras" [ref=e233]:
+                    - link "Cerebras" [ref=e234] [cursor=pointer]:
+                      - /url: ./providers/cerebras
+                  - cell "✅" [ref=e235]
+                  - cell [ref=e236]
+                  - cell [ref=e237]
+                  - cell [ref=e238]
+                  - cell [ref=e239]
+                  - cell [ref=e240]
+                - row "Cohere ✅ ✅" [ref=e241]:
+                  - cell "Cohere" [ref=e242]:
+                    - link "Cohere" [ref=e243] [cursor=pointer]:
+                      - /url: ./providers/cohere
+                  - cell "✅" [ref=e244]
+                  - cell "✅" [ref=e245]
+                  - cell [ref=e246]
+                  - cell [ref=e247]
+                  - cell [ref=e248]
+                  - cell [ref=e249]
+                - row "Fal AI ✅ ✅ ✅" [ref=e250]:
+                  - cell "Fal AI" [ref=e251]:
+                    - link "Fal AI" [ref=e252] [cursor=pointer]:
+                      - /url: ./providers/fal-ai
+                  - cell [ref=e253]
+                  - cell [ref=e254]
+                  - cell [ref=e255]
+                  - cell "✅" [ref=e256]
+                  - cell "✅" [ref=e257]
+                  - cell "✅" [ref=e258]
+                - row "Featherless AI ✅ ✅" [ref=e259]:
+                  - cell "Featherless AI" [ref=e260]:
+                    - link "Featherless AI" [ref=e261] [cursor=pointer]:
+                      - /url: ./providers/featherless-ai
+                  - cell "✅" [ref=e262]
+                  - cell "✅" [ref=e263]
+                  - cell [ref=e264]
+                  - cell [ref=e265]
+                  - cell [ref=e266]
+                  - cell [ref=e267]
+                - row "Fireworks ✅ ✅" [ref=e268]:
+                  - cell "Fireworks" [ref=e269]:
+                    - link "Fireworks" [ref=e270] [cursor=pointer]:
+                      - /url: ./providers/fireworks-ai
+                  - cell "✅" [ref=e271]
+                  - cell "✅" [ref=e272]
+                  - cell [ref=e273]
+                  - cell [ref=e274]
+                  - cell [ref=e275]
+                  - cell [ref=e276]
+                - row "Groq ✅ ✅" [ref=e277]:
+                  - cell "Groq" [ref=e278]:
+                    - link "Groq" [ref=e279] [cursor=pointer]:
+                      - /url: ./providers/groq
+                  - cell "✅" [ref=e280]
+                  - cell "✅" [ref=e281]
+                  - cell [ref=e282]
+                  - cell [ref=e283]
+                  - cell [ref=e284]
+                  - cell [ref=e285]
+                - row "HF Inference ✅ ✅ ✅ ✅ ✅" [ref=e286]:
+                  - cell "HF Inference" [ref=e287]:
+                    - link "HF Inference" [ref=e288] [cursor=pointer]:
+                      - /url: ./providers/hf-inference
+                  - cell "✅" [ref=e289]
+                  - cell "✅" [ref=e290]
+                  - cell "✅" [ref=e291]
+                  - cell "✅" [ref=e292]
+                  - cell [ref=e293]
+                  - cell "✅" [ref=e294]
+                - row "Hyperbolic ✅ ✅" [ref=e295]:
+                  - cell "Hyperbolic" [ref=e296]:
+                    - link "Hyperbolic" [ref=e297] [cursor=pointer]:
+                      - /url: ./providers/hyperbolic
+                  - cell "✅" [ref=e298]
+                  - cell "✅" [ref=e299]
+                  - cell [ref=e300]
+                  - cell [ref=e301]
+                  - cell [ref=e302]
+                  - cell [ref=e303]
+                - row "Novita ✅ ✅ ✅" [ref=e304]:
+                  - cell "Novita" [ref=e305]:
+                    - link "Novita" [ref=e306] [cursor=pointer]:
+                      - /url: ./providers/novita
+                  - cell "✅" [ref=e307]
+                  - cell "✅" [ref=e308]
+                  - cell [ref=e309]
+                  - cell [ref=e310]
+                  - cell "✅" [ref=e311]
+                  - cell [ref=e312]
+                - row "Nscale ✅ ✅ ✅" [ref=e313]:
+                  - cell "Nscale" [ref=e314]:
+                    - link "Nscale" [ref=e315] [cursor=pointer]:
+                      - /url: ./providers/nscale
+                  - cell "✅" [ref=e316]
+                  - cell "✅" [ref=e317]
+                  - cell [ref=e318]
+                  - cell "✅" [ref=e319]
+                  - cell [ref=e320]
+                  - cell [ref=e321]
+                - row "OVHcloud AI Endpoints ✅ ✅" [ref=e322]:
+                  - cell "OVHcloud AI Endpoints" [ref=e323]:
+                    - link "OVHcloud AI Endpoints" [ref=e324] [cursor=pointer]:
+                      - /url: ./providers/ovhcloud
+                  - cell "✅" [ref=e325]
+                  - cell "✅" [ref=e326]
+                  - cell [ref=e327]
+                  - cell [ref=e328]
+                  - cell [ref=e329]
+                  - cell [ref=e330]
+                - row "Public AI ✅" [ref=e331]:
+                  - cell "Public AI" [ref=e332]:
+                    - link "Public AI" [ref=e333] [cursor=pointer]:
+                      - /url: ./providers/publicai
+                  - cell "✅" [ref=e334]
+                  - cell [ref=e335]
+                  - cell [ref=e336]
+                  - cell [ref=e337]
+                  - cell [ref=e338]
+                  - cell [ref=e339]
+                - row "Replicate ✅ ✅ ✅" [ref=e340]:
+                  - cell "Replicate" [ref=e341]:
+                    - link "Replicate" [ref=e342] [cursor=pointer]:
+                      - /url: ./providers/replicate
+                  - cell [ref=e343]
+                  - cell [ref=e344]
+                  - cell [ref=e345]
+                  - cell "✅" [ref=e346]
+                  - cell "✅" [ref=e347]
+                  - cell "✅" [ref=e348]
+                - row "SambaNova ✅ ✅" [ref=e349]:
+                  - cell "SambaNova" [ref=e350]:
+                    - link "SambaNova" [ref=e351] [cursor=pointer]:
+                      - /url: ./providers/sambanova
+                  - cell "✅" [ref=e352]
+                  - cell [ref=e353]
+                  - cell "✅" [ref=e354]
+                  - cell [ref=e355]
+                  - cell [ref=e356]
+                  - cell [ref=e357]
+                - row "Scaleway ✅ ✅" [ref=e358]:
+                  - cell "Scaleway" [ref=e359]:
+                    - link "Scaleway" [ref=e360] [cursor=pointer]:
+                      - /url: ./providers/scaleway
+                  - cell "✅" [ref=e361]
+                  - cell [ref=e362]
+                  - cell "✅" [ref=e363]
+                  - cell [ref=e364]
+                  - cell [ref=e365]
+                  - cell [ref=e366]
+                - row "Together ✅ ✅ ✅" [ref=e367]:
+                  - cell "Together" [ref=e368]:
+                    - link "Together" [ref=e369] [cursor=pointer]:
+                      - /url: ./providers/together
+                  - cell "✅" [ref=e370]
+                  - cell "✅" [ref=e371]
+                  - cell [ref=e372]
+                  - cell "✅" [ref=e373]
+                  - cell [ref=e374]
+                  - cell [ref=e375]
+                - row "WaveSpeedAI ✅ ✅" [ref=e376]:
+                  - cell "WaveSpeedAI" [ref=e377]:
+                    - link "WaveSpeedAI" [ref=e378] [cursor=pointer]:
+                      - /url: ./providers/wavespeed
+                  - cell [ref=e379]
+                  - cell [ref=e380]
+                  - cell [ref=e381]
+                  - cell "✅" [ref=e382]
+                  - cell "✅" [ref=e383]
+                  - cell [ref=e384]
+                - row "Z.ai ✅ ✅" [ref=e385]:
+                  - cell "Z.ai" [ref=e386]:
+                    - link "Z.ai" [ref=e387] [cursor=pointer]:
+                      - /url: ./providers/zai-org
+                  - cell "✅" [ref=e388]
+                  - cell "✅" [ref=e389]
+                  - cell [ref=e390]
+                  - cell [ref=e391]
+                  - cell [ref=e392]
+                  - cell [ref=e393]
+            - heading "Why Choose Inference Providers?" [level=2] [ref=e394]:
+              - link [ref=e395] [cursor=pointer]:
+                - /url: "#why-choose-inference-providers"
+                - img [ref=e397]
+              - text: Why Choose Inference Providers?
+            - paragraph [ref=e399]: "When you build AI applications, it’s tough to manage multiple provider APIs, comparing model performance, and dealing with varying reliability. Inference Providers solves these challenges by offering:"
+            - paragraph [ref=e400]:
+              - strong [ref=e401]: Instant Access to Cutting-Edge Models
+              - text: ": Go beyond mainstream providers to access thousands of specialized models across multiple AI tasks. Whether you need the latest language models, state-of-the-art image generators, or domain-specific embeddings, you’ll find them here."
+            - paragraph [ref=e402]:
+              - strong [ref=e403]: Zero Vendor Lock-in
+              - text: ": Unlike being tied to a single provider’s model catalog, you get access to models from Cerebras, Groq, Together AI, Replicate, and more — all through one consistent interface."
+            - paragraph [ref=e404]:
+              - strong [ref=e405]: Production-Ready Performance
+              - text: ": Built for enterprise workloads with the reliability your applications demand."
+            - paragraph [ref=e406]: "Here’s what you can build:"
+            - list [ref=e407]:
+              - listitem [ref=e408]:
+                - strong [ref=e409]: Text Generation
+                - text: ": Use Large language models with tool-calling capabilities for chatbots, content generation, and code assistance"
+              - listitem [ref=e410]:
+                - strong [ref=e411]: Image and Video Generation
+                - text: ": Create custom images and videos, including support for LoRAs and style customization"
+              - listitem [ref=e412]:
+                - strong [ref=e413]: Search & Retrieval
+                - text: ": State-of-the-art embeddings for semantic search, RAG systems, and recommendation engines"
+              - listitem [ref=e414]:
+                - strong [ref=e415]: Traditional ML Tasks
+                - text: ": Ready-to-use models for classification, NER, summarization, and speech recognition"
+            - paragraph [ref=e416]:
+              - text: ⚡
+              - strong [ref=e417]: Get Started for Free
+              - text: ": Inference Providers includes a generous free tier, with additional credits for"
+              - link "PRO users" [ref=e418] [cursor=pointer]:
+                - /url: https://hf.co/subscribe/pro
+              - text: and
+              - link "Team & Enterprise organizations" [ref=e419] [cursor=pointer]:
+                - /url: https://huggingface.co/enterprise
+              - text: .
+            - heading "Key Features" [level=2] [ref=e420]:
+              - link [ref=e421] [cursor=pointer]:
+                - /url: "#key-features"
+                - img [ref=e423]
+              - text: Key Features
+            - list [ref=e425]:
+              - listitem [ref=e426]:
+                - strong [ref=e427]: 🎯 All-in-One API
+                - text: ": A single API for text generation, image generation, document embeddings, NER, summarization, image classification, and more."
+              - listitem [ref=e428]:
+                - strong [ref=e429]: 🔀 Multi-Provider Support
+                - text: ": Easily run models from top-tier providers like fal, Replicate, Sambanova, Together AI, and others."
+              - listitem [ref=e430]:
+                - strong [ref=e431]: 🚀 Scalable & Reliable
+                - text: ": Built for high availability and low-latency performance in production environments."
+              - listitem [ref=e432]:
+                - strong [ref=e433]: 🔧 Developer-Friendly
+                - text: ": Simple requests, fast responses, and a consistent developer experience across Python and JavaScript clients."
+              - listitem [ref=e434]:
+                - strong [ref=e435]: 👷 Easy to integrate
+                - text: ": Drop-in replacement for the OpenAI chat completions API."
+              - listitem [ref=e436]:
+                - strong [ref=e437]: 💰 Cost-Effective
+                - text: ": No extra markup on provider rates."
+            - heading "Getting Started" [level=2] [ref=e438]:
+              - link [ref=e439] [cursor=pointer]:
+                - /url: "#getting-started"
+                - img [ref=e441]
+              - text: Getting Started
+            - paragraph [ref=e443]: Inference Providers works with your existing development workflow. Whether you prefer Python, JavaScript, or direct HTTP calls, we provide native SDKs and OpenAI-compatible APIs to get you up and running quickly.
+            - paragraph [ref=e444]:
+              - text: We’ll walk through a practical example using
+              - link "openai/gpt-oss-120b" [ref=e445] [cursor=pointer]:
+                - /url: https://huggingface.co/openai/gpt-oss-120b
+              - text: ", a state-of-the-art open-weights conversational model."
+            - heading "Inference Playground" [level=3] [ref=e446]:
+              - link [ref=e447] [cursor=pointer]:
+                - /url: "#inference-playground"
+                - img [ref=e449]
+              - text: Inference Playground
+            - paragraph [ref=e451]:
+              - text: Before diving into integration, explore models interactively with our
+              - link "Inference Playground" [ref=e452] [cursor=pointer]:
+                - /url: https://huggingface.co/playground
+              - text: . Test different
+              - link "chat completion models" [ref=e453] [cursor=pointer]:
+                - /url: http://huggingface.co/models?inference_provider=all&sort=trending&other=conversational
+              - text: with your prompts and compare responses to find the perfect fit for your use case.
+            - link "Inference Playground thumbnail" [ref=e454] [cursor=pointer]:
+              - /url: https://huggingface.co/playground
+              - img "Inference Playground thumbnail" [ref=e455]
+            - heading "Authentication" [level=3] [ref=e456]:
+              - link [ref=e457] [cursor=pointer]:
+                - /url: "#authentication"
+                - img [ref=e459]
+              - text: Authentication
+            - paragraph [ref=e461]:
+              - text: You’ll need a Hugging Face token to authenticate your requests. Create one by visiting your
+              - link "token settings" [ref=e462] [cursor=pointer]:
+                - /url: https://huggingface.co/settings/tokens/new?ownUserPermissions=inference.serverless.write&tokenType=fineGrained
+              - text: and generating a
+              - code [ref=e463]: fine-grained
+              - text: token with
+              - code [ref=e464]: Make calls to Inference Providers
+              - text: permissions.
+            - paragraph [ref=e465]:
+              - text: For complete token management details, see our
+              - link "security tokens guide" [ref=e466] [cursor=pointer]:
+                - /url: https://huggingface.co/docs/hub/en/security-tokens
+              - text: .
+            - heading "Quick Start - LLM" [level=3] [ref=e467]:
+              - link [ref=e468] [cursor=pointer]:
+                - /url: "#quick-start---llm"
+                - img [ref=e470]
+              - text: Quick Start - LLM
+            - paragraph [ref=e472]: "Let’s start with the most common use case: conversational AI using large language models. This section demonstrates how to perform chat completions using DeepSeek V3, showcasing the different ways you can integrate Inference Providers into your applications."
+            - paragraph [ref=e473]: Whether you prefer our native clients, want OpenAI compatibility, or need direct HTTP access, we’ll show you how to get up and running with just a few lines of code.
+            - heading "Python" [level=4] [ref=e474]:
+              - link [ref=e475] [cursor=pointer]:
+                - /url: "#python"
+                - img [ref=e477]
+              - text: Python
+            - paragraph [ref=e479]: "Here are three ways to integrate Inference Providers into your Python applications, from high-level convenience to low-level control:"
+            - generic [ref=e480]:
+              - generic [ref=e481]: huggingface_hub
+              - generic [ref=e482] [cursor=pointer]: openai
+              - generic [ref=e483] [cursor=pointer]: requests
+            - generic [ref=e484]:
+              - paragraph [ref=e485]:
+                - text: For convenience, the
+                - code [ref=e486]: huggingface_hub
+                - text: library provides an
+                - link "InferenceClient" [ref=e487] [cursor=pointer]:
+                  - /url: https://huggingface.co/docs/huggingface_hub/guides/inference
+                  - code [ref=e488]: InferenceClient
+                - text: that automatically handles provider selection and request routing.
+              - paragraph [ref=e489]: "In your terminal, install the Hugging Face Hub Python client and log in:"
+              - generic [ref=e490]:
+                - button "Copied" [ref=e492] [cursor=pointer]:
+                  - img [ref=e493]
+                  - generic: Copied
+                - generic [ref=e497]: "pip install huggingface_hub hf auth login # get a read token from hf.co/settings/tokens"
+              - paragraph [ref=e498]: You can now use the client with a Python interpreter.
+              - paragraph [ref=e499]:
+                - text: By default, our system automatically selects the fastest available provider for the specified model (equivalent to the
+                - code [ref=e500]: :fastest
+                - text: policy — highest throughput in tokens per second).
+              - paragraph [ref=e501]:
+                - text: "You can change the provider selection policy by appending a policy suffix to the model id:"
+                - code [ref=e502]: :cheapest
+                - text: for the most cost-efficient provider (lowest price per output token), or
+                - code [ref=e503]: :preferred
+                - text: to follow your preference order in
+                - link "Inference Provider settings" [ref=e504] [cursor=pointer]:
+                  - /url: https://hf.co/settings/inference-providers
+                - text: . For example,
+                - code [ref=e505]: openai/gpt-oss-120b:cheapest
+                - text: .
+              - paragraph [ref=e506]:
+                - text: You can also select the provider of your choice by appending the provider name to the model id (e.g.
+                - code [ref=e507]: "\"openai/gpt-oss-120b:sambanova\""
+                - text: ).
+              - generic [ref=e508]:
+                - button "Copied" [ref=e510] [cursor=pointer]:
+                  - img [ref=e511]
+                  - generic: Copied
+                - generic [ref=e515]: "import os from huggingface_hub import InferenceClient client = InferenceClient() completion = client.chat.completions.create( model=\"openai/gpt-oss-120b\", messages=[ { \"role\": \"user\", \"content\": \"How many 'G's in 'huggingface'?\" } ], ) print(completion.choices[0].message)"
+            - heading "JavaScript" [level=4] [ref=e516]:
+              - link [ref=e517] [cursor=pointer]:
+                - /url: "#javascript"
+                - img [ref=e519]
+              - text: JavaScript
+            - paragraph [ref=e521]: "Integrate Inference Providers into your JavaScript applications with these flexible approaches:"
+            - generic [ref=e522]:
+              - generic [ref=e523]: huggingface.js
+              - generic [ref=e524] [cursor=pointer]: openai
+              - generic [ref=e525] [cursor=pointer]: fetch
+            - generic [ref=e526]:
+              - paragraph [ref=e527]: Our JavaScript SDK provides a convenient interface with automatic provider selection and TypeScript support.
+              - paragraph [ref=e528]: "Install with NPM:"
+              - generic [ref=e529]:
+                - button "Copied" [ref=e531] [cursor=pointer]:
+                  - img [ref=e532]
+                  - generic: Copied
+                - generic [ref=e536]: npm install @huggingface/inference
+              - paragraph [ref=e537]: Then use the client with Javascript.
+              - paragraph [ref=e538]:
+                - text: By default, our system automatically selects the fastest available provider for the specified model (equivalent to the
+                - code [ref=e539]: :fastest
+                - text: policy — highest throughput in tokens per second).
+              - paragraph [ref=e540]:
+                - text: "You can change the provider selection policy by appending a policy suffix to the model id:"
+                - code [ref=e541]: :cheapest
+                - text: for the most cost-efficient provider (lowest price per output token), or
+                - code [ref=e542]: :preferred
+                - text: to follow your preference order in
+                - link "Inference Provider settings" [ref=e543] [cursor=pointer]:
+                  - /url: https://hf.co/settings/inference-providers
+                - text: . For example,
+                - code [ref=e544]: openai/gpt-oss-120b:cheapest
+                - text: .
+              - paragraph [ref=e545]:
+                - text: You can also select the provider of your choice by appending the provider name to the model id (e.g.
+                - code [ref=e546]: "\"openai/gpt-oss-120b:sambanova\""
+                - text: ).
+              - generic [ref=e547]:
+                - button "Copied" [ref=e549] [cursor=pointer]:
+                  - img [ref=e550]
+                  - generic: Copied
+                - generic [ref=e554]: "import { InferenceClient } from \"@huggingface/inference\"; const client = new InferenceClient(process.env.HF_TOKEN); const chatCompletion = await client.chatCompletion({ model: \"openai/gpt-oss-120b:fastest\", messages: [ { role: \"user\", content: \"How many 'G's in 'huggingface'?\", }, ], }); console.log(chatCompletion.choices[0].message);"
+            - heading "HTTP / cURL" [level=4] [ref=e555]:
+              - link [ref=e556] [cursor=pointer]:
+                - /url: "#http--curl"
+                - img [ref=e558]
+              - text: HTTP / cURL
+            - paragraph [ref=e560]: For testing, debugging, or integrating with any HTTP client, here’s the raw REST API format.
+            - paragraph [ref=e561]:
+              - text: By default, our system automatically selects the fastest available provider for the specified model (equivalent to the
+              - code [ref=e562]: :fastest
+              - text: policy — highest throughput in tokens per second).
+            - paragraph [ref=e563]:
+              - text: "You can change the provider selection policy by appending a policy suffix to the model id:"
+              - code [ref=e564]: :cheapest
+              - text: for the most cost-efficient provider (lowest price per output token), or
+              - code [ref=e565]: :preferred
+              - text: to follow your preference order in
+              - link "Inference Provider settings" [ref=e566] [cursor=pointer]:
+                - /url: https://hf.co/settings/inference-providers
+              - text: . For example,
+              - code [ref=e567]: openai/gpt-oss-120b:cheapest
+              - text: .
+            - paragraph [ref=e568]:
+              - text: You can also select the provider of your choice by appending the provider name to the model id (e.g.
+              - code [ref=e569]: "\"openai/gpt-oss-120b:sambanova\""
+              - text: ).
+            - generic [ref=e570]:
+              - button "Copied" [ref=e572] [cursor=pointer]:
+                - img [ref=e573]
+                - generic: Copied
+              - generic [ref=e577]:
+                - text: curl https://router.huggingface.co/v1/chat/completions \ -H
+                - generic [ref=e578]: "\"Authorization: Bearer $HF_TOKEN\""
+                - text: "\\ -H 'Content-Type: application/json' \\ -d '{ \"messages\": [ { \"role\": \"user\", \"content\": \"How many G in huggingface?\" } ], \"model\": \"openai/gpt-oss-120b:fastest\", \"stream\": false }'"
+            - heading "Quick Start - Text-to-Image Generation" [level=3] [ref=e579]:
+              - link [ref=e580] [cursor=pointer]:
+                - /url: "#quick-start---text-to-image-generation"
+                - img [ref=e582]
+              - text: Quick Start - Text-to-Image Generation
+            - paragraph [ref=e584]:
+              - text: Let’s explore how to generate images from text prompts using Inference Providers. We’ll use
+              - link "black-forest-labs/FLUX.1-dev" [ref=e585] [cursor=pointer]:
+                - /url: https://huggingface.co/black-forest-labs/FLUX.1-dev
+              - text: ", a state-of-the-art diffusion model that produces highly detailed, photorealistic images."
+            - heading "Python" [level=4] [ref=e586]:
+              - link [ref=e587] [cursor=pointer]:
+                - /url: "#python"
+                - img [ref=e589]
+              - text: Python
+            - paragraph [ref=e591]:
+              - text: Use the
+              - code [ref=e592]: huggingface_hub
+              - text: "library for the simplest image generation experience with automatic provider selection:"
+            - generic [ref=e593]:
+              - button "Copied" [ref=e595] [cursor=pointer]:
+                - img [ref=e596]
+                - generic: Copied
+              - generic [ref=e600]: "import os from huggingface_hub import InferenceClient client = InferenceClient(api_key=os.environ[\"HF_TOKEN\"]) image = client.text_to_image( prompt=\"A serene lake surrounded by mountains at sunset, photorealistic style\", model=\"black-forest-labs/FLUX.1-dev\" ) # Save the generated image image.save(\"generated_image.png\")"
+            - heading "JavaScript" [level=4] [ref=e601]:
+              - link [ref=e602] [cursor=pointer]:
+                - /url: "#javascript"
+                - img [ref=e604]
+              - text: JavaScript
+            - paragraph [ref=e606]: "Use our JavaScript SDK for streamlined image generation with TypeScript support:"
+            - generic [ref=e607]:
+              - button "Copied" [ref=e609] [cursor=pointer]:
+                - img [ref=e610]
+                - generic: Copied
+              - generic [ref=e614]: "import { InferenceClient } from \"@huggingface/inference\"; import fs from \"fs\"; const client = new InferenceClient(process.env.HF_TOKEN); const imageBlob = await client.textToImage({ model: \"black-forest-labs/FLUX.1-dev\", inputs: \"A serene lake surrounded by mountains at sunset, photorealistic style\", }); // Save the image const buffer = Buffer.from(await imageBlob.arrayBuffer()); fs.writeFileSync(\"generated_image.png\", buffer);"
+            - heading "Provider Selection" [level=2] [ref=e615]:
+              - link [ref=e616] [cursor=pointer]:
+                - /url: "#provider-selection"
+                - img [ref=e618]
+              - text: Provider Selection
+            - paragraph [ref=e620]: The Inference Providers API acts as a unified proxy layer that sits between your application and multiple AI providers. Understanding how provider selection works is crucial for optimizing performance, cost, and reliability in your applications.
+            - heading "API as a Proxy Service" [level=3] [ref=e621]:
+              - link [ref=e622] [cursor=pointer]:
+                - /url: "#api-as-a-proxy-service"
+                - img [ref=e624]
+              - text: API as a Proxy Service
+            - paragraph [ref=e626]: "When using Inference Providers, your requests go through Hugging Face’s proxy infrastructure, which provides several key benefits:"
+            - list [ref=e627]:
+              - listitem [ref=e628]:
+                - strong [ref=e629]: Unified Authentication & Billing
+                - text: ": Use a single Hugging Face token for all providers"
+              - listitem [ref=e630]:
+                - strong [ref=e631]: Automatic Failover
+                - text: ": When using automatic provider selection ("
+                - code [ref=e632]: provider="auto"
+                - text: ), requests are automatically routed to alternative providers if the primary provider is flagged as unavailable by our validation system
+              - listitem [ref=e633]:
+                - strong [ref=e634]: Consistent Interface through client libraries
+                - text: ": When using our client libraries, the same request format works across different providers"
+            - paragraph [ref=e635]:
+              - text: Because the API acts as a proxy, the exact HTTP request may vary between providers as each provider has their own API requirements and response formats.
+              - strong [ref=e636]: When using our official client libraries
+              - text: (JavaScript or Python), these provider-specific differences are handled automatically whether you use
+              - code [ref=e637]: provider="auto"
+              - text: or specify a particular provider.
+            - heading "Client-Side Provider Selection (Inference Clients)" [level=3] [ref=e638]:
+              - link [ref=e639] [cursor=pointer]:
+                - /url: "#client-side-provider-selection-inference-clients"
+                - img [ref=e641]
+              - text: Client-Side Provider Selection (Inference Clients)
+            - paragraph [ref=e643]: When using the Hugging Face inference clients (JavaScript or Python), you can explicitly specify a provider or let the system choose automatically. The client then formats the HTTP request to match the selected provider’s API requirements.
+            - generic [ref=e644]:
+              - generic [ref=e645]: javascript
+              - generic [ref=e646] [cursor=pointer]: python
+            - generic [ref=e648]:
+              - button "Copied" [ref=e650] [cursor=pointer]:
+                - img [ref=e651]
+                - generic: Copied
+              - generic [ref=e655]: "import { InferenceClient } from \"@huggingface/inference\"; const client = new InferenceClient(process.env.HF_TOKEN); // Explicit provider selection await client.chatCompletion({ model: \"deepseek-ai/DeepSeek-R1\", provider: \"sambanova\", // Specific provider messages: [{ role: \"user\", content: \"Hello!\" }], }); // Automatic provider selection (default: \"auto\") await client.chatCompletion({ model: \"deepseek-ai/DeepSeek-R1\", // Defaults to \"auto\" selection of the provider // provider=\"auto\", messages: [{ role: \"user\", content: \"Hello!\" }], });"
+            - paragraph [ref=e656]:
+              - strong [ref=e657]: "Provider Selection Policy:"
+            - list [ref=e658]:
+              - listitem [ref=e659]:
+                - code [ref=e660]: "provider: \"auto\""
+                - text: "(default): Selects the fastest available provider for the model (highest throughput in tokens per second), equivalent to the"
+                - code [ref=e661]: :fastest
+                - text: policy.
+              - listitem [ref=e662]:
+                - code [ref=e663]: "provider: \"specific-provider\""
+                - text: ": Forces use of a specific provider (e.g., “together”, “replicate”, “fal-ai”, …)."
+            - 'heading "Alternative: OpenAI-Compatible Chat Completions Endpoint (Chat Only)" [level=3] [ref=e664]':
+              - link [ref=e665] [cursor=pointer]:
+                - /url: "#alternative-openai-compatible-chat-completions-endpoint-chat-only"
+                - img [ref=e667]
+              - text: "Alternative: OpenAI-Compatible Chat Completions Endpoint (Chat Only)"
+            - paragraph [ref=e669]: If you prefer to work with familiar OpenAI APIs or want to migrate existing chat completion code with minimal changes, we offer a drop-in compatible endpoint that handles all provider selection automatically on the server side.
+            - paragraph [ref=e670]:
+              - text: By default, the fastest available provider is selected for the model (highest throughput in tokens per second). This is equivalent to appending
+              - code [ref=e671]: :fastest
+              - text: "to the model name. You can change that policy by adding a suffix to the model name:"
+            - list [ref=e672]:
+              - listitem [ref=e673]:
+                - code [ref=e674]: :cheapest
+                - text: selects the most cost-efficient provider for the model (lowest price per output tokens)
+              - listitem [ref=e675]:
+                - code [ref=e676]: :preferred
+                - text: selects the first available provider sorted by your preference order in
+                - link "Inference Provider settings" [ref=e677] [cursor=pointer]:
+                  - /url: https://hf.co/settings/inference-providers
+            - paragraph [ref=e678]:
+              - strong [ref=e679]: Note
+              - text: ": This OpenAI-compatible endpoint is currently available for chat completion tasks only. For other tasks like text-to-image, embeddings, or speech processing, use the Hugging Face inference clients shown above."
+            - generic [ref=e680]:
+              - generic [ref=e681]: javascript
+              - generic [ref=e682] [cursor=pointer]: python
+            - generic [ref=e684]:
+              - button "Copied" [ref=e686] [cursor=pointer]:
+                - img [ref=e687]
+                - generic: Copied
+              - generic [ref=e691]: "import { OpenAI } from \"openai\"; const client = new OpenAI({ baseURL: \"https://router.huggingface.co/v1\", apiKey: process.env.HF_TOKEN, }); const completion = await client.chat.completions.create({ model: \"deepseek-ai/DeepSeek-R1:fastest\", messages: [{ role: \"user\", content: \"Hello!\" }], });"
+            - paragraph [ref=e692]: This endpoint can also be requested through direct HTTP access, making it suitable for integration with various HTTP clients and applications that need to interact with the chat completion service directly.
+            - generic [ref=e693]:
+              - button "Copied" [ref=e695] [cursor=pointer]:
+                - img [ref=e696]
+                - generic: Copied
+              - generic [ref=e700]:
+                - text: curl https://router.huggingface.co/v1/chat/completions \ -H
+                - generic [ref=e701]: "\"Authorization: Bearer $HF_TOKEN\""
+                - text: "\\ -H \"Content-Type: application/json\" \\ -d '{ \"model\": \"deepseek-ai/DeepSeek-R1:fastest\", \"messages\": [ { \"role\": \"user\", \"content\": \"Hello!\" } ] }'"
+            - paragraph [ref=e702]:
+              - strong [ref=e703]: "Key Features:"
+            - list [ref=e704]:
+              - listitem [ref=e705]:
+                - strong [ref=e706]: Server-Side Provider Selection
+                - text: ": The server automatically selects the fastest available provider by default ("
+                - code [ref=e707]: :fastest
+                - text: policy)
+              - listitem [ref=e708]:
+                - strong [ref=e709]: Model Listing
+                - text: ": GET"
+                - code [ref=e710]: /v1/models
+                - text: returns available models across all providers
+              - listitem [ref=e711]:
+                - strong [ref=e712]: OpenAI SDK Compatibility
+                - text: ": Works with existing OpenAI client libraries"
+              - listitem [ref=e713]:
+                - strong [ref=e714]: Chat Tasks Only
+                - text: ": Limited to conversational workloads"
+            - heading "Choosing the Right Approach" [level=3] [ref=e715]:
+              - link [ref=e716] [cursor=pointer]:
+                - /url: "#choosing-the-right-approach"
+                - img [ref=e718]
+              - text: Choosing the Right Approach
+            - paragraph [ref=e720]:
+              - strong [ref=e721]: "Use Inference Clients when:"
+            - list [ref=e722]:
+              - listitem [ref=e723]: You need support for all task types (text-to-image, speech, embeddings, etc.)
+              - listitem [ref=e724]: You want explicit control over provider selection
+              - listitem [ref=e725]: You’re building applications that use multiple AI tasks
+            - paragraph [ref=e726]:
+              - strong [ref=e727]: "Use OpenAI-Compatible Endpoint when:"
+            - list [ref=e728]:
+              - listitem [ref=e729]: You’re only doing chat completions
+              - listitem [ref=e730]: You want to migrate existing OpenAI-based code with minimal changes
+              - listitem [ref=e731]: You prefer server-side provider management
+            - paragraph [ref=e732]:
+              - strong [ref=e733]: "Use Direct HTTP when:"
+            - list [ref=e734]:
+              - listitem [ref=e735]: You’re implementing custom request logic
+              - listitem [ref=e736]: You need fine-grained control over the request/response cycle
+              - listitem [ref=e737]: You’re working in environments without available client libraries
+            - heading "Next Steps" [level=2] [ref=e738]:
+              - link [ref=e739] [cursor=pointer]:
+                - /url: "#next-steps"
+                - img [ref=e741]
+              - text: Next Steps
+            - paragraph [ref=e743]: "Now that you understand the basics, explore these resources to make the most of Inference Providers:"
+            - list [ref=e744]:
+              - listitem [ref=e745]:
+                - strong [ref=e746]:
+                  - link "Announcement Blog Post" [ref=e747] [cursor=pointer]:
+                    - /url: https://huggingface.co/blog/inference-providers
+                - text: ": Learn more about the launch of Inference Providers"
+              - listitem [ref=e748]:
+                - strong [ref=e749]:
+                  - link "Pricing and Billing" [ref=e750] [cursor=pointer]:
+                    - /url: ./pricing
+                - text: ": Understand costs and billing of Inference Providers"
+              - listitem [ref=e751]:
+                - strong [ref=e752]:
+                  - link "Hub Integration" [ref=e753] [cursor=pointer]:
+                    - /url: ./hub-integration
+                - text: ": Learn how Inference Providers are integrated with the Hugging Face Hub"
+              - listitem [ref=e754]:
+                - strong [ref=e755]:
+                  - link "Register as a Provider" [ref=e756] [cursor=pointer]:
+                    - /url: ./register-as-a-provider
+                - text: ": Requirements to join our partner network as a provider"
+              - listitem [ref=e757]:
+                - strong [ref=e758]:
+                  - link "Hub API" [ref=e759] [cursor=pointer]:
+                    - /url: ./hub-api
+                - text: ": Advanced API features and configuration"
+              - listitem [ref=e760]:
+                - strong [ref=e761]:
+                  - link "API Reference" [ref=e762] [cursor=pointer]:
+                    - /url: ./tasks/index
+                - text: ": Complete parameter documentation for all supported tasks"
+            - link "Update on GitHub" [ref=e763] [cursor=pointer]:
+              - /url: https://github.com/huggingface/hub-docs/blob/main/docs/inference-providers/index.md
+              - img [ref=e764]
+              - generic [ref=e768]: Update on GitHub
+            - paragraph
+          - link "Pricing and Billing →" [ref=e772] [cursor=pointer]:
+            - /url: /docs/inference-providers/pricing
+            - text: Pricing and Billing
+            - generic [ref=e773]: →
+  - generic [ref=e776]:
+    - img [ref=e777]
+    - textbox "Ask HuggingChat" [ref=e780]
+    - button "Send message" [ref=e781] [cursor=pointer]:
+      - img [ref=e782]

@@ -1,0 +1,595 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Brave logo" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Brave logo" [ref=e8]
+        - generic [ref=e10]:
+          - textbox "Search" [ref=e11]:
+            - /placeholder: Ask anything, find anything…
+            - text: HF inference providers
+          - generic [ref=e12]:
+            - button "Clear" [ref=e13] [cursor=pointer]:
+              - img [ref=e14]
+            - button "Search" [ref=e17] [cursor=pointer]:
+              - img [ref=e18]
+            - button "Ask" [ref=e20] [cursor=pointer]:
+              - generic [ref=e21]:
+                - img [ref=e23]
+                - img [ref=e26]
+      - generic [ref=e29]:
+        - button "Rerank" [ref=e30] [cursor=pointer]:
+          - img [ref=e32]
+        - button "Quick settings" [ref=e36] [cursor=pointer]:
+          - img [ref=e38]
+  - navigation [ref=e42]:
+    - list [ref=e43]:
+      - listitem [ref=e44]:
+        - link "Ask" [ref=e45] [cursor=pointer]:
+          - /url: /ask?q=HF+inference+providers&source=web
+          - generic [ref=e46]: Ask
+      - listitem [ref=e47]:
+        - link "All" [ref=e48] [cursor=pointer]:
+          - /url: /search?q=HF+inference+providers&source=web
+          - generic [ref=e49]: All
+      - listitem [ref=e50]:
+        - link "Images" [ref=e51] [cursor=pointer]:
+          - /url: /images?q=HF+inference+providers&source=web
+          - generic [ref=e52]: Images
+      - listitem [ref=e53]:
+        - link "News" [ref=e54] [cursor=pointer]:
+          - /url: /news?q=HF+inference+providers&source=web
+          - generic [ref=e55]: News
+      - listitem [ref=e56]:
+        - link "Videos" [ref=e57] [cursor=pointer]:
+          - /url: /videos?q=HF+inference+providers&source=web
+          - generic [ref=e58]: Videos
+      - listitem [ref=e59]:
+        - link "Goggles" [ref=e60] [cursor=pointer]:
+          - /url: /goggles?q=HF+inference+providers&source=web
+          - generic [ref=e61]: Goggles
+    - list [ref=e62]:
+      - button "Filters" [ref=e63] [cursor=pointer]:
+        - img [ref=e65]
+  - main [ref=e67]:
+    - main [ref=e70]:
+      - generic [ref=e71]:
+        - generic [ref=e72]:
+          - generic [ref=e74]:
+            - link "🌐 Hugging Face huggingface.co › docs › inference-providers › index Inference Providers · Hugging Face" [ref=e75] [cursor=pointer]:
+              - /url: https://huggingface.co/docs/inference-providers/index
+              - generic [ref=e76]:
+                - generic [ref=e77]:
+                  - img [ref=e79]
+                  - img "🌐" [ref=e80]
+                - generic [ref=e81]:
+                  - generic [ref=e82]: Hugging Face
+                  - generic [ref=e84]: huggingface.co › docs › inference-providers › index
+              - generic "Inference Providers · Hugging Face" [ref=e85]
+            - generic [ref=e87]: "You can change the provider selection policy by appending a policy suffix to the model id: :cheapest for the most cost-efficient provider (lowest price per output token), or :preferred to follow your preference order in Inference Provider settings. For example, openai/gpt-oss-120b:cheapest. You can also select the provider of your choice by appending the provider name to the model id (e.g. \"openai/gpt-oss-120b:sambanova\"). ... curl https://router.huggingface.co/v1/chat/completions \\ -H \"Authorization: Bearer $HF_TOKEN\" \\ -H 'Content-Type: application/json' \\ -d '{ \"messages\": [ { \"role\": \"user\", \"content\": \"How many G in huggingface?\""
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - link "Models" [ref=e90] [cursor=pointer]:
+                - /url: https://huggingface.co/models
+              - generic [ref=e91]: Explore machine learning models
+            - generic [ref=e92]:
+              - link "Spaces" [ref=e93] [cursor=pointer]:
+                - /url: https://huggingface.co/spaces
+              - generic [ref=e94]: The AI App Directory · Run 1.58-bit Bonsai LLMs locally in your browser on WebGPU
+            - generic [ref=e95]:
+              - link "Pricing" [ref=e96] [cursor=pointer]:
+                - /url: https://huggingface.co/pricing
+              - generic [ref=e97]:
+                - strong [ref=e98]: Inference
+                - text: Endpoints (dedicated) offers a secure production solution to easily deploy any ML model on dedicated and autoscaling infrastructure, right from the
+                - strong [ref=e99]: HF
+                - text: Hub. →Learn more ... A monthly subscription to access powerful features. → Get PRO ($9/month)
+                - strong [ref=e100]: Inference
+                - strong [ref=e101]: Providers
+                - text: ": Get 20× included ..."
+            - generic [ref=e102]:
+              - link "Datasets" [ref=e103] [cursor=pointer]:
+                - /url: https://huggingface.co/datasets
+              - generic [ref=e104]: Explore datasets powering machine learning
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - link "🌐 Hugging Face huggingface.co › docs › inference-providers › providers › hf-inference HF Inference · Hugging Face" [ref=e108] [cursor=pointer]:
+              - /url: https://huggingface.co/docs/inference-providers/providers/hf-inference
+              - generic [ref=e109]:
+                - generic [ref=e110]:
+                  - img [ref=e112]
+                  - img "🌐" [ref=e113]
+                - generic [ref=e114]:
+                  - generic [ref=e115]: Hugging Face
+                  - generic [ref=e117]: huggingface.co › docs › inference-providers › providers › hf-inference
+              - generic "HF Inference · Hugging Face" [ref=e118]
+            - generic [ref=e120]: As of July 2025, hf-inference focuses mostly on CPU inference (e.g. embedding, text-ranking, text-classification, or smaller LLMs that have historical importance like BERT or GPT-2). Find out more about Automatic Speech Recognition here. ... import os from huggingface_hub import InferenceClient client = InferenceClient( provider="hf-inference", api_key=os.environ["HF_TOKEN"], ) output = client.automatic_speech_recognition("sample1.flac", model="openai/whisper-large-v3")
+          - link [ref=e122] [cursor=pointer]:
+            - /url: https://huggingface.co/docs/inference-providers/providers/hf-inference
+        - generic [ref=e123]:
+          - heading "Videos" [level=5] [ref=e124]:
+            - img [ref=e125]
+            - text: Videos
+          - generic [ref=e127]:
+            - 'link "18:51 🌐 YouTube Inference Providers: Best Way to Build with Open Source Models ... November 26, 2025" [ref=e128] [cursor=pointer]':
+              - /url: https://www.youtube.com/watch?v=oxwsizy1Spw
+              - generic [ref=e129]:
+                - img [ref=e130]
+                - generic [ref=e131]: 18:51
+              - generic [ref=e132]:
+                - generic [ref=e133]:
+                  - img "🌐" [ref=e134]
+                  - generic [ref=e135]: YouTube
+                - generic [ref=e136]: "Inference Providers: Best Way to Build with Open Source Models ..."
+                - generic [ref=e138]: November 26, 2025
+            - link "01:53 🌐 YouTube Use Open-source LLMs with VS Code and HF Inference Providers - YouTube September 11, 2025" [ref=e139] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=rqawpJhPhvM
+              - generic [ref=e140]:
+                - img [ref=e141]
+                - generic [ref=e142]: 01:53
+              - generic [ref=e143]:
+                - generic [ref=e144]:
+                  - img "🌐" [ref=e145]
+                  - generic [ref=e146]: YouTube
+                - generic [ref=e147]: Use Open-source LLMs with VS Code and HF Inference Providers - YouTube
+                - generic [ref=e149]: September 11, 2025
+            - link "07:22 🌐 YouTube Hands-On Introduction to Inference Endpoints (Hugging Face) - YouTube August 12, 2024" [ref=e150] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=J15u1Y2b4sw
+              - generic [ref=e151]:
+                - img [ref=e152]
+                - generic [ref=e153]: 07:22
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - img "🌐" [ref=e156]
+                  - generic [ref=e157]: YouTube
+                - generic [ref=e158]: Hands-On Introduction to Inference Endpoints (Hugging Face) - YouTube
+                - generic [ref=e160]: August 12, 2024
+            - link "🌐 youtube.com How to Use Hugging Face Inference API" [ref=e161] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=85FVwWPg63Q
+              - img [ref=e163]
+              - generic [ref=e164]:
+                - generic [ref=e165]:
+                  - img "🌐" [ref=e166]
+                  - generic [ref=e167]: youtube.com
+                - generic [ref=e168]: How to Use Hugging Face Inference API
+            - link "16:45 🌐 YouTube Deploy models with Hugging Face Inference Endpoints - YouTube October 10, 2022" [ref=e169] [cursor=pointer]:
+              - /url: https://www.youtube.com/watch?v=ZQPm2-uR9zA
+              - generic [ref=e170]:
+                - img [ref=e171]
+                - generic [ref=e172]: 16:45
+              - generic [ref=e173]:
+                - generic [ref=e174]:
+                  - img "🌐" [ref=e175]
+                  - generic [ref=e176]: YouTube
+                - generic [ref=e177]: Deploy models with Hugging Face Inference Endpoints - YouTube
+                - generic [ref=e179]: October 10, 2022
+            - link "View all" [ref=e181] [cursor=pointer]:
+              - /url: /videos?q=HF inference providers&source=vcluster
+              - generic [ref=e182]: View all
+              - img [ref=e183]
+        - generic [ref=e186]:
+          - generic [ref=e187]:
+            - link "🌐 Hugging Face huggingface.co › inference › models Hugging Face Inference Providers · Supported Models" [ref=e188] [cursor=pointer]:
+              - /url: https://huggingface.co/inference/models
+              - generic [ref=e189]:
+                - generic [ref=e190]:
+                  - img [ref=e192]
+                  - img "🌐" [ref=e193]
+                - generic [ref=e194]:
+                  - generic [ref=e195]: Hugging Face
+                  - generic [ref=e197]: huggingface.co › inference › models
+              - generic "Hugging Face Inference Providers · Supported Models" [ref=e198]
+            - generic [ref=e200]: Exhaustive list of models supported by Hugging Face Inference Providers with detailed features and performance metrics.
+          - link [ref=e202] [cursor=pointer]:
+            - /url: https://huggingface.co/inference/models
+        - generic [ref=e204]:
+          - generic [ref=e205]:
+            - link "🌐 Hugging Face huggingface.co › inference › get-started Getting Started with Inference Providers" [ref=e206] [cursor=pointer]:
+              - /url: https://huggingface.co/inference/get-started
+              - generic [ref=e207]:
+                - generic [ref=e208]:
+                  - img [ref=e210]
+                  - img "🌐" [ref=e211]
+                - generic [ref=e212]:
+                  - generic [ref=e213]: Hugging Face
+                  - generic [ref=e215]: huggingface.co › inference › get-started
+              - generic "Getting Started with Inference Providers" [ref=e216]
+            - generic [ref=e218]:
+              - text: Hugging Face Inference Providers
+              - strong [ref=e219]: unifies 15+ inference partners under a single, OpenAI‑compatible endpoint
+              - text: . Move from prototype to production with the same, unified API and no infrastructure to manage.
+          - link [ref=e221] [cursor=pointer]:
+            - /url: https://huggingface.co/inference/get-started
+        - generic [ref=e223]:
+          - generic [ref=e224]:
+            - link "🌐 LiteLLM docs.litellm.ai › supported models & providers › hugging face Hugging Face | liteLLM" [ref=e225] [cursor=pointer]:
+              - /url: https://docs.litellm.ai/docs/providers/huggingface
+              - generic [ref=e226]:
+                - generic [ref=e227]:
+                  - img [ref=e229]
+                  - img "🌐" [ref=e230]
+                - generic [ref=e231]:
+                  - generic [ref=e232]: LiteLLM
+                  - generic [ref=e234]: docs.litellm.ai › supported models & providers › hugging face
+              - generic "Hugging Face | liteLLM" [ref=e235]
+            - generic [ref=e237]: "In this case, we are configuring a proxy to serve DeepSeek R1 from Hugging Face, using Together AI as the backend Inference Provider. model_list: - model_name: my-r1-model litellm_params: model: huggingface/together/deepseek-ai/DeepSeek-R1 api_key: os.environ/HF_TOKEN # ensure you have `HF_TOKEN` in your .env"
+          - link [ref=e239] [cursor=pointer]:
+            - /url: https://docs.litellm.ai/docs/providers/huggingface
+        - generic [ref=e241]:
+          - generic [ref=e242]:
+            - link "🌐 GitHub github.com › huggingface › huggingface.js › blob › main › packages › inference › README.md huggingface.js/packages/inference/README.md at main · huggingface/huggingface.js" [ref=e243] [cursor=pointer]:
+              - /url: https://github.com/huggingface/huggingface.js/blob/main/packages/inference/README.md
+              - generic [ref=e244]:
+                - generic [ref=e245]:
+                  - img [ref=e247]
+                  - img "🌐" [ref=e248]
+                - generic [ref=e249]:
+                  - generic [ref=e250]: GitHub
+                  - generic [ref=e252]: github.com › huggingface › huggingface.js › blob › main › packages › inference › README.md
+              - generic "huggingface.js/packages/inference/README.md at main · huggingface/huggingface.js" [ref=e253]
+            - generic [ref=e255]: To send requests to a third-party provider, you have to pass the provider parameter to the inference function. The default value of the provider parameter is "auto", which will select the first of the providers available for the model, sorted by your preferred order in https://hf.co/settings/inference-providers.
+            - generic [ref=e257]:
+              - strong [ref=e258]: Author
+              - text: huggingface
+          - link [ref=e260] [cursor=pointer]:
+            - /url: https://github.com/huggingface/huggingface.js/blob/main/packages/inference/README.md
+        - generic [ref=e262]:
+          - generic [ref=e263]:
+            - link "🌐 Hugging Face huggingface.co › docs › hub › en › models-inference Inference Providers" [ref=e264] [cursor=pointer]:
+              - /url: https://huggingface.co/docs/hub/en/models-inference
+              - generic [ref=e265]:
+                - generic [ref=e266]:
+                  - img [ref=e268]
+                  - img "🌐" [ref=e269]
+                - generic [ref=e270]:
+                  - generic [ref=e271]: Hugging Face
+                  - generic [ref=e273]: huggingface.co › docs › hub › en › models-inference
+              - generic "Inference Providers" [ref=e274]
+            - generic [ref=e276]: Hugging Face’s model pages have pay-as-you-go inference for thousands of models, so you can try them all out right in the browser. Service is powered by Inference Providers and includes a free-tier.
+          - link [ref=e278] [cursor=pointer]:
+            - /url: https://huggingface.co/docs/hub/en/models-inference
+        - generic [ref=e280]:
+          - generic [ref=e281]:
+            - link "🌐 GitHub github.com › huggingface › hub-docs › blob › main › docs › inference-providers › providers › hf-inference.md hub-docs/docs/inference-providers/providers/hf-inference.md at main · huggingface/hub-docs" [ref=e282] [cursor=pointer]:
+              - /url: https://github.com/huggingface/hub-docs/blob/main/docs/inference-providers/providers/hf-inference.md
+              - generic [ref=e283]:
+                - generic [ref=e284]:
+                  - img [ref=e286]
+                  - img "🌐" [ref=e287]
+                - generic [ref=e288]:
+                  - generic [ref=e289]: GitHub
+                  - generic [ref=e291]: github.com › huggingface › hub-docs › blob › main › docs › inference-providers › providers › hf-inference.md
+              - generic "hub-docs/docs/inference-providers/providers/hf-inference.md at main · huggingface/hub-docs" [ref=e292]
+            - generic [ref=e294]:
+              - text: As of July 2025, hf-inference
+              - strong [ref=e295]: focuses mostly on CPU inference (e.g. embedding, text-ranking, text-classification, or smaller LLMs that have historical importance like BERT or GPT-2)
+              - text: . Find out more about Automatic Speech Recognition here.
+            - generic [ref=e297]:
+              - strong [ref=e298]: Author
+              - text: huggingface
+          - link [ref=e300] [cursor=pointer]:
+            - /url: https://github.com/huggingface/hub-docs/blob/main/docs/inference-providers/providers/hf-inference.md
+        - generic [ref=e302]:
+          - generic [ref=e303]:
+            - img [ref=e304]
+            - text: Find elsewhere
+          - generic [ref=e306]:
+            - link "Google" [ref=e307] [cursor=pointer]:
+              - /url: /search?q=HF%20inference%20providers%20!g
+            - link "Bing" [ref=e308] [cursor=pointer]:
+              - /url: /search?q=HF%20inference%20providers%20!b
+            - link "Mojeek" [ref=e309] [cursor=pointer]:
+              - /url: /search?q=HF%20inference%20providers%20!mojeek
+        - generic [ref=e310]:
+          - generic [ref=e312]:
+            - 'link "🌐 Reddit reddit.com › r/huggingface › hf launched inference providers for organizations r/huggingface on Reddit: HF launched Inference Providers for organizations" [ref=e313] [cursor=pointer]':
+              - /url: https://www.reddit.com/r/huggingface/comments/1jpuq1v/hf_launched_inference_providers_for_organizations/
+              - generic [ref=e314]:
+                - generic [ref=e315]:
+                  - img [ref=e317]
+                  - img "🌐" [ref=e318]
+                - generic [ref=e319]:
+                  - generic [ref=e320]: Reddit
+                  - generic [ref=e322]: reddit.com › r/huggingface › hf launched inference providers for organizations
+              - 'generic "r/huggingface on Reddit: HF launched Inference Providers for organizations" [ref=e323]'
+            - generic [ref=e324]:
+              - text: April 2, 2025 -
+              - paragraph [ref=e325]: "Some details ⤵️:"
+              - list [ref=e326]:
+                - listitem [ref=e327]:
+                  - paragraph [ref=e328]: Organization needs to be subscribed to Hugging Face Enterprise Hub given this is a feature that requires billing
+                - listitem [ref=e329]:
+                  - paragraph [ref=e330]: Each organization gets a pool of $2 of included usage per seat - shared among org members
+                - listitem [ref=e331]:
+                  - paragraph [ref=e332]: Usage past those included credits is billed on top of the subscription (pay-as-you-go)
+                - listitem [ref=e333]:
+                  - paragraph [ref=e334]: Organization admins can enable/disable usage of Inference Providers and set a spending limit (on top of included credits)
+              - paragraph [ref=e335]: Check the documentation on the Hub on how to bill your org for Inference Providers usage
+              - paragraph [ref=e336]: Feedback is welcome ❤️
+          - link "Top answer 1 of 1 2 I'm a bit confused by this. Does this mean i can sign up through huggingface, then pay for/use models via api hosted by other providers? I'm looking for something similar to open router, but with more models (like tts), is that kind of what this is?" [ref=e338] [cursor=pointer]:
+            - /url: https://www.reddit.com/r/huggingface/comments/1jpuq1v/hf_launched_inference_providers_for_organizations/
+            - generic [ref=e339]:
+              - img [ref=e340]
+              - generic [ref=e342]: Top answer
+              - img [ref=e344]
+              - text: 1 of 1
+              - generic [ref=e346]:
+                - img [ref=e347]
+                - text: "2"
+            - generic [ref=e349]: I'm a bit confused by this. Does this mean i can sign up through huggingface, then pay for/use models via api hosted by other providers? I'm looking for something similar to open router, but with more models (like tts), is that kind of what this is?
+        - generic [ref=e351]:
+          - generic [ref=e352]:
+            - link "🌐 Hugging Face huggingface.co › blog › inference-providers Welcome to Inference Providers on the Hub 🔥" [ref=e353] [cursor=pointer]:
+              - /url: https://huggingface.co/blog/inference-providers
+              - generic [ref=e354]:
+                - generic [ref=e355]:
+                  - img [ref=e357]
+                  - img "🌐" [ref=e358]
+                - generic [ref=e359]:
+                  - generic [ref=e360]: Hugging Face
+                  - generic [ref=e362]: huggingface.co › blog › inference-providers
+              - generic "Welcome to Inference Providers on the Hub 🔥" [ref=e363]
+            - generic [ref=e365]: January 28, 2025 - Some of them may have discounts or special offers that may not be available through HF. Sambanova, for example, is still free. ... Utiliser juste le visage pour le remplacer sur un autre visage d’un homme pourtant un costume noir ... Let's add https://nineteen.ai/ It has the fastest inference speed & it's completely free! ... With an entreprise token in routed mode i get "You have exceeded your monthly included credits for Inference Endpoints. Subscribe to PRO to get 20x more monthly allowance." ... The previous pro provided 20,000 requests.
+          - link [ref=e367] [cursor=pointer]:
+            - /url: https://huggingface.co/blog/inference-providers
+        - generic [ref=e370]:
+          - 'link "🌐 Together AI docs.together.ai › docs › quickstart-using-hugging-face-inference Quickstart: Using Hugging Face Inference With Together - Together AI Docs" [ref=e371] [cursor=pointer]':
+            - /url: https://docs.together.ai/docs/quickstart-using-hugging-face-inference
+            - generic [ref=e372]:
+              - generic [ref=e373]:
+                - img [ref=e375]
+                - img "🌐" [ref=e376]
+              - generic [ref=e377]:
+                - generic [ref=e378]: Together AI
+                - generic [ref=e380]: docs.together.ai › docs › quickstart-using-hugging-face-inference
+            - 'generic "Quickstart: Using Hugging Face Inference With Together - Together AI Docs" [ref=e381]'
+          - generic [ref=e383]: "You can also call inference providers via the OpenAI python client. You will need to specify the base_url and model parameters in the client and call respectively. The easiest way is to go to a model’s page on the hub and copy the snippet. ... from openai import OpenAI client = OpenAI( base_url=\"https://router.huggingface.co/together\", api_key=\"hf_xxxxxxxxxxxxxxxxxxxxxxxx\", # together or Hugging Face api key ) messages = [{\"role\": \"user\", \"content\": \"What is the capital of France?\"}] completion = client.chat.completions.create( model=\"deepseek-ai/DeepSeek-R1\", messages=messages, max_tokens=500, ) print(completion.choices[0].message)"
+        - generic [ref=e385]:
+          - generic [ref=e386]:
+            - link "🌐 Hugging Face huggingface.co › models Models available on HF Inference API – Hugging Face" [ref=e387] [cursor=pointer]:
+              - /url: https://huggingface.co/models?inference_provider=hf-inference
+              - generic [ref=e388]:
+                - generic [ref=e389]:
+                  - img [ref=e391]
+                  - img "🌐" [ref=e392]
+                - generic [ref=e393]:
+                  - generic [ref=e394]: Hugging Face
+                  - generic [ref=e396]: huggingface.co › models
+              - generic "Models available on HF Inference API – Hugging Face" [ref=e397]
+            - generic [ref=e399]: Inference Providers Reset Inference Providers · Groq · Novita · Cerebras · SambaNova · Nscale · fal · Hyperbolic · Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere · Scaleway · Public AI · OVHcloud AI Endpoints · HF Inference API ·
+          - link [ref=e401] [cursor=pointer]:
+            - /url: https://huggingface.co/models?inference_provider=hf-inference
+        - generic [ref=e403]:
+          - generic [ref=e404]:
+            - link "🌐 npm npmjs.com › package › @huggingface › inference @huggingface/inference - npm" [ref=e405] [cursor=pointer]:
+              - /url: https://www.npmjs.com/package/@huggingface/inference
+              - generic [ref=e406]:
+                - generic [ref=e407]:
+                  - img [ref=e409]
+                  - img "🌐" [ref=e410]
+                - generic [ref=e411]:
+                  - generic [ref=e412]: npm
+                  - generic [ref=e414]: npmjs.com › package › @huggingface › inference
+              - generic "@huggingface/inference - npm" [ref=e415]
+            - generic [ref=e417]: March 6, 2026 - To send requests to a third-party provider, you have to pass the provider parameter to the inference function. The default value of the provider parameter is "auto", which will select the first of the providers available for the model, sorted by your preferred order in https://hf.co/settings/inference-providers.
+            - generic [ref=e418]:
+              - generic [ref=e420]: » npm install @huggingface/inference
+              - button [ref=e422] [cursor=pointer]:
+                - img [ref=e423]
+            - generic [ref=e425]:
+              - generic [ref=e426]:
+                - strong [ref=e427]: Published
+                - text: Mar 06, 2026
+              - generic [ref=e428]:
+                - strong [ref=e429]: Version
+                - text: 4.13.15
+          - link [ref=e431] [cursor=pointer]:
+            - /url: https://www.npmjs.com/package/@huggingface/inference
+        - generic [ref=e434]:
+          - link "🌐 GitHub raw.githubusercontent.com › huggingface › huggingface.js › main › packages › inference › README.md https://raw.githubusercontent.com/huggingface/hugg..." [ref=e435] [cursor=pointer]:
+            - /url: https://raw.githubusercontent.com/huggingface/huggingface.js/main/packages/inference/README.md
+            - generic [ref=e436]:
+              - generic [ref=e437]:
+                - img [ref=e439]
+                - img "🌐" [ref=e440]
+              - generic [ref=e441]:
+                - generic [ref=e442]: GitHub
+                - generic [ref=e444]: raw.githubusercontent.com › huggingface › huggingface.js › main › packages › inference › README.md
+            - generic "https://raw.githubusercontent.com/huggingface/hugg..." [ref=e445]
+          - generic [ref=e447]: "## Using Inference Providers You can send inference requests to third-party providers with the inference client. Currently, we support the following providers: - [Fal.ai](https://fal.ai) - [Featherless AI](https://featherless.ai) - [Fireworks AI](https://fireworks.ai) - [HF Inference](https://huggingface.co/docs/inference-providers/providers/hf-inference) - [Hyperbolic](https://hyperbolic.xyz) - [Nebius](https://studio.nebius.ai) - [Novita](https://novita.ai) - [Nscale](https://nscale.com) - [NVIDIA](https://build.nvidia.com/) - [OVHcloud](https://endpoints.ai.cloud.ovh.net/) - [Public AI](htt"
+        - generic [ref=e450]:
+          - link "🌐 Huggingface endpoints.huggingface.co Inference Endpoints by Hugging Face" [ref=e451] [cursor=pointer]:
+            - /url: https://endpoints.huggingface.co/
+            - generic [ref=e452]:
+              - generic [ref=e453]:
+                - img [ref=e455]
+                - img "🌐" [ref=e456]
+              - generic [ref=e457]:
+                - generic [ref=e458]: Huggingface
+                - generic [ref=e460]: endpoints.huggingface.co
+            - generic "Inference Endpoints by Hugging Face" [ref=e461]
+          - generic [ref=e463]: It took off a week's worth of developer time. Thanks to Inference Endpoints, we now basically spend all of our time on R&D, not fiddling with AWS.
+        - generic [ref=e465]:
+          - generic [ref=e466]:
+            - link "🌐 PydanticAI ai.pydantic.dev › models › huggingface Hugging Face | Pydantic Docs" [ref=e467] [cursor=pointer]:
+              - /url: https://ai.pydantic.dev/models/huggingface/
+              - generic [ref=e468]:
+                - generic [ref=e469]:
+                  - img [ref=e471]
+                  - img "🌐" [ref=e472]
+                - generic [ref=e473]:
+                  - generic [ref=e474]: PydanticAI
+                  - generic [ref=e476]: ai.pydantic.dev › models › huggingface
+              - generic "Hugging Face | Pydantic Docs" [ref=e477]
+            - generic [ref=e479]:
+              - text: By default, the HuggingFaceModel uses the HuggingFaceProvider that will select automatically the first of the inference providers (
+              - strong [ref=e480]: Cerebras, Together AI, Cohere
+              - text: ..etc) available for the model, sorted by your preferred order in https://hf.co/...
+          - link [ref=e482] [cursor=pointer]:
+            - /url: https://ai.pydantic.dev/models/huggingface/
+        - generic [ref=e484]:
+          - generic [ref=e485]:
+            - link "🌐 Hugging Face huggingface.co › spaces › nbroad › compare-hf-inference-providers Inference Provider Dashboard - a Hugging Face Space by nbroad" [ref=e486] [cursor=pointer]:
+              - /url: https://huggingface.co/spaces/nbroad/compare-hf-inference-providers
+              - generic [ref=e487]:
+                - generic [ref=e488]:
+                  - img [ref=e490]
+                  - img "🌐" [ref=e491]
+                - generic [ref=e492]:
+                  - generic [ref=e493]: Hugging Face
+                  - generic [ref=e495]: huggingface.co › spaces › nbroad › compare-hf-inference-providers
+              - generic "Inference Provider Dashboard - a Hugging Face Space by nbroad" [ref=e496]
+            - generic [ref=e498]: View and analyze monthly AI inference request data from different service providers. See real-time comparisons of request volumes, historical usage patterns, and detailed provider information. Trac...
+          - link [ref=e500] [cursor=pointer]:
+            - /url: https://huggingface.co/spaces/nbroad/compare-hf-inference-providers
+        - generic [ref=e501]:
+          - generic [ref=e503]:
+            - 'link "🌐 Reddit reddit.com › r/huggingface › hf new inference providers pricing confusion. seems like we pay more, for less. r/huggingface on Reddit: HF new Inference Providers pricing confusion. Seems like we pay more, for less." [ref=e504] [cursor=pointer]':
+              - /url: https://www.reddit.com/r/huggingface/comments/1idkjx5/hf_new_inference_providers_pricing_confusion/
+              - generic [ref=e505]:
+                - generic [ref=e506]:
+                  - img [ref=e508]
+                  - img "🌐" [ref=e509]
+                - generic [ref=e510]:
+                  - generic [ref=e511]: Reddit
+                  - generic [ref=e513]: reddit.com › r/huggingface › hf new inference providers pricing confusion. seems like we pay more, for less.
+              - 'generic "r/huggingface on Reddit: HF new Inference Providers pricing confusion. Seems like we pay more, for less." [ref=e514]'
+            - generic [ref=e515]:
+              - text: January 30, 2025 -
+              - paragraph [ref=e516]: HF partnered with some companies, and now we have Inference providers other than HF. The only issue is that it seems like most of the models I'm looking at are supported only on third party providers. Reading here https://huggingface.co/blog/inference-providers seems like you need to pay for the third party providers (if you are on a pro subscription, you get 2USD credits for free per month). I'm looking at my account quota, and it seems like I have 20k inference credits only on HF. So basically, now I'm paying 9$ for nothing, then pay more for inference? I can go directly to the provider and give them 9 USD in credits instead of 2 USD credits that you get from HF monthly. Am I missing something? I know that HF never were transparent with quota, limits and pricing.
+          - generic [ref=e517]:
+            - link "Top answer 1 of 4 4 I'm trying to figure this out as well. I just want to pay someone to host a model and give me an OpenAI API compatible key. Why all these hoops?" [ref=e518] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/huggingface/comments/1idkjx5/hf_new_inference_providers_pricing_confusion/
+              - generic [ref=e519]:
+                - img [ref=e520]
+                - generic [ref=e522]: Top answer
+                - img [ref=e524]
+                - text: 1 of 4
+                - generic [ref=e526]:
+                  - img [ref=e527]
+                  - text: "4"
+              - generic [ref=e529]: I'm trying to figure this out as well. I just want to pay someone to host a model and give me an OpenAI API compatible key. Why all these hoops?
+            - link "2 of 4 2 I m also trying to understand, as previously I was seeing I had 1000 requests/day for free without Pro plan. Now I cannot understand how many of them I have. I see now here they described how it works with the new way https://huggingface.co/docs/api-inference/en/pricing but I would like to have a rough idea of how many request I ll be able to do for free" [ref=e530] [cursor=pointer]:
+              - /url: https://www.reddit.com/r/huggingface/comments/1idkjx5/hf_new_inference_providers_pricing_confusion/
+              - generic [ref=e531]:
+                - text: 2 of 4
+                - generic [ref=e532]:
+                  - img [ref=e533]
+                  - text: "2"
+              - generic [ref=e535]: I m also trying to understand, as previously I was seeing I had 1000 requests/day for free without Pro plan. Now I cannot understand how many of them I have. I see now here they described how it works with the new way https://huggingface.co/docs/api-inference/en/pricing but I would like to have a rough idea of how many request I ll be able to do for free
+        - generic [ref=e537]:
+          - generic [ref=e538]:
+            - img [ref=e539]
+            - text: Related queries
+          - generic [ref=e542]:
+            - link "hf inference api" [ref=e543] [cursor=pointer]:
+              - /url: /search?q=hf%20inference%20api&source=relatedQueries
+              - img [ref=e544]
+              - generic [ref=e546]:
+                - text: hf inference
+                - strong [ref=e547]: api
+            - link "@huggingface/inference npm" [ref=e548] [cursor=pointer]:
+              - /url: /search?q=%40huggingface%2Finference%20npm&source=relatedQueries
+              - img [ref=e549]
+              - generic [ref=e551]:
+                - strong [ref=e552]: "@huggingface/inference"
+                - strong [ref=e553]: npm
+            - link "hf inference providers reddit" [ref=e554] [cursor=pointer]:
+              - /url: /search?q=hf%20inference%20providers%20reddit&source=relatedQueries
+              - img [ref=e555]
+              - generic [ref=e557]:
+                - text: hf inference providers
+                - strong [ref=e558]: reddit
+            - link "hugging face api key free" [ref=e559] [cursor=pointer]:
+              - /url: /search?q=hugging%20face%20api%20key%20free&source=relatedQueries
+              - img [ref=e560]
+              - generic [ref=e562]:
+                - strong [ref=e563]: hugging
+                - strong [ref=e564]: face
+                - strong [ref=e565]: api
+                - strong [ref=e566]: key
+                - strong [ref=e567]: free
+            - link "hugging face inference api pricing" [ref=e568] [cursor=pointer]:
+              - /url: /search?q=hugging%20face%20inference%20api%20pricing&source=relatedQueries
+              - img [ref=e569]
+              - generic [ref=e571]:
+                - strong [ref=e572]: hugging
+                - text: face
+                - strong [ref=e573]: inference
+                - strong [ref=e574]: api
+                - strong [ref=e575]: pricing
+            - link "huggingface inference example" [ref=e576] [cursor=pointer]:
+              - /url: /search?q=huggingface%20inference%20example&source=relatedQueries
+              - img [ref=e577]
+              - generic [ref=e579]:
+                - strong [ref=e580]: huggingface
+                - text: inference
+                - strong [ref=e581]: example
+            - link "hugging face inference api key" [ref=e582] [cursor=pointer]:
+              - /url: /search?q=hugging%20face%20inference%20api%20key&source=relatedQueries
+              - img [ref=e583]
+              - generic [ref=e585]:
+                - strong [ref=e586]: hugging
+                - text: face
+                - strong [ref=e587]: inference
+                - strong [ref=e588]: api
+                - strong [ref=e589]: key
+            - link "hugging face inference endpoints" [ref=e590] [cursor=pointer]:
+              - /url: /search?q=hugging%20face%20inference%20endpoints&source=relatedQueries
+              - img [ref=e591]
+              - generic [ref=e593]:
+                - strong [ref=e594]: hugging
+                - text: face
+                - strong [ref=e595]: inference
+                - strong [ref=e596]: endpoints
+        - link "Next" [ref=e599] [cursor=pointer]:
+          - /url: /search?q=HF%20inference%20providers&offset=1&spellcheck=0
+          - generic [ref=e600]: Next
+          - img [ref=e601]
+  - contentinfo [ref=e603]:
+    - main [ref=e606]:
+      - generic [ref=e607]:
+        - generic [ref=e608]:
+          - heading "Resources" [level=6] [ref=e609]
+          - generic [ref=e610]:
+            - link "Brave Search Premium" [ref=e611] [cursor=pointer]:
+              - /url: https://account.brave.com/?intent=checkout&product=search
+            - link "Brave Search Help" [ref=e612] [cursor=pointer]:
+              - /url: /help
+            - link "Transparency Report" [ref=e613] [cursor=pointer]:
+              - /url: https://brave.com/transparency/
+            - link "Report a security issue" [ref=e614] [cursor=pointer]:
+              - /url: https://hackerone.com/brave
+            - link "Status" [ref=e615] [cursor=pointer]:
+              - /url: https://status.brave.app/
+        - generic [ref=e616]:
+          - heading "Products" [level=6] [ref=e617]
+          - generic [ref=e618]:
+            - link "Brave Browser" [ref=e619] [cursor=pointer]:
+              - /url: https://brave.com/download/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+            - link "Brave Search" [ref=e620] [cursor=pointer]:
+              - /url: https://search.brave.com
+            - link "Brave Wallet" [ref=e621] [cursor=pointer]:
+              - /url: https://brave.com/wallet/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+            - link "Brave Talk" [ref=e622] [cursor=pointer]:
+              - /url: https://talk.brave.com/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+            - link "Brave Firewall + VPN" [ref=e623] [cursor=pointer]:
+              - /url: https://brave.com/firewall-vpn/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+            - link "Brave Playlist" [ref=e624] [cursor=pointer]:
+              - /url: https://brave.com/playlist/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+            - link "Brave News" [ref=e625] [cursor=pointer]:
+              - /url: https://brave.com/brave-news/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+            - link "Brave Rewards" [ref=e626] [cursor=pointer]:
+              - /url: https://brave.com/brave-rewards/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+            - link "Brave Search API" [ref=e627] [cursor=pointer]:
+              - /url: https://brave.com/search/api/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+            - link "Brave Ads" [ref=e628] [cursor=pointer]:
+              - /url: https://brave.com/brave-ads/?mtm_source=brave-search&mtm_medium=searchfooter&mtm_campaign=brave-search&mtm_content=evergreen
+        - generic [ref=e629]:
+          - heading "Policies" [level=6] [ref=e630]
+          - generic [ref=e631]:
+            - link "Privacy Policy" [ref=e632] [cursor=pointer]:
+              - /url: /help/privacy-policy
+            - link "Terms of Use" [ref=e633] [cursor=pointer]:
+              - /url: https://brave.com/terms-of-use/
